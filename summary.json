@@ -1,0 +1,1355 @@
+{
+    "problem_data_file": "scenario_112.json",
+    "solution_data_file": "scenario_112_solution.json",
+    "git_info": {
+        "C3DataUtilities": {
+            "branch": "main",
+            "commit": "bb5df337553b21ab8be89ae5f9106958541730d4",
+            "date": "Wed Sep 6 11:03:53 2023 -0700",
+            "query_return_code": 0,
+            "query_err": "",
+            "branch_return_code": 0,
+            "branch_err": "",
+            "query_path": "C:\\Users\\jfernandez87\\GitHub\\UC_scheduling\\C3DataUtilities\\datautilities",
+            "query_out": "commit bb5df337553b21ab8be89ae5f9106958541730d4\nAuthor: Jesse T Holzer <jesse.holzer@pnnl.gov>\nDate:   Wed Sep 6 11:03:53 2023 -0700\n\n    switches after start\n",
+            "branch_out": "* main\n"
+        },
+        "Bid-DS-data-model": {
+            "branch": "main",
+            "commit": "bb5df337553b21ab8be89ae5f9106958541730d4",
+            "date": "Wed Sep 6 11:03:53 2023 -0700",
+            "query_return_code": 0,
+            "query_err": "",
+            "branch_return_code": 0,
+            "branch_err": "",
+            "query_path": "C:\\Users\\jfernandez87\\GitHub\\UC_scheduling\\C3DataUtilities\\.venv\\Lib\\site-packages\\datamodel",
+            "query_out": "commit bb5df337553b21ab8be89ae5f9106958541730d4\nAuthor: Jesse T Holzer <jesse.holzer@pnnl.gov>\nDate:   Wed Sep 6 11:03:53 2023 -0700\n\n    switches after start\n",
+            "branch_out": "* main\n"
+        }
+    },
+    "problem": {
+        "general": {
+            "timestamp_start": null,
+            "timestamp_stop": null,
+            "season": null,
+            "electricity_demand": null,
+            "vre_availability": null,
+            "solar_availability": null,
+            "wind_availability": null,
+            "weather_temperature": null,
+            "day_type": null,
+            "net_load": null,
+            "base_norm_mva": 100.0
+        },
+        "violation costs": {
+            "p_bus_vio_cost": 100000.0,
+            "q_bus_vio_cost": 100000.0,
+            "s_vio_cost": 100000.0,
+            "e_vio_cost": 100000.0
+        },
+        "num buses": 3,
+        "num ac lines": 2,
+        "num dc lines": 0,
+        "num transformers": 2,
+        "num shunts": 2,
+        "num simple dispatchable devices": 3,
+        "num producing devices": 2,
+        "num consuming devices": 1,
+        "num real power reserve zones": 1,
+        "num reactive power reserve zones": 1,
+        "num intervals": 18,
+        "num contingencies": 2,
+        "total duration": 8.0,
+        "interval durations": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            1.0,
+            1.0
+        ],
+        "p_pr_0": 0.245,
+        "p_cs_0": 0.31183,
+        "q_pr_0": 0.5,
+        "q_cs_0": 0.15102,
+        "u_pr_0": 2,
+        "u_cs_0": 1,
+        "u_acl_0": 2,
+        "u_xfr_0": 2,
+        "reserve_info": {
+            "min_zone_rgu_short_cost": 100.0,
+            "med_zone_rgu_short_cost": 100.0,
+            "max_zone_rgu_short_cost": 100.0,
+            "rng_zone_rgu_short_cost": 0.0,
+            "min_zone_rgd_short_cost": 100.0,
+            "med_zone_rgd_short_cost": 100.0,
+            "max_zone_rgd_short_cost": 100.0,
+            "rng_zone_rgd_short_cost": 0.0,
+            "min_zone_scr_short_cost": 100.0,
+            "med_zone_scr_short_cost": 100.0,
+            "max_zone_scr_short_cost": 100.0,
+            "rng_zone_scr_short_cost": 0.0,
+            "min_zone_nsc_short_cost": 100.0,
+            "med_zone_nsc_short_cost": 100.0,
+            "max_zone_nsc_short_cost": 100.0,
+            "rng_zone_nsc_short_cost": 0.0,
+            "min_zone_rru_short_cost": 100.0,
+            "med_zone_rru_short_cost": 100.0,
+            "max_zone_rru_short_cost": 100.0,
+            "rng_zone_rru_short_cost": 0.0,
+            "min_zone_rrd_short_cost": 100.0,
+            "med_zone_rrd_short_cost": 100.0,
+            "max_zone_rrd_short_cost": 100.0,
+            "rng_zone_rrd_short_cost": 0.0,
+            "min_zone_qru_short_cost": 100.0,
+            "med_zone_qru_short_cost": 100.0,
+            "max_zone_qru_short_cost": 100.0,
+            "rng_zone_qru_short_cost": 0.0,
+            "min_zone_qrd_short_cost": 100.0,
+            "med_zone_qrd_short_cost": 100.0,
+            "max_zone_qrd_short_cost": 100.0,
+            "rng_zone_qrd_short_cost": 0.0,
+            "min_zone_rgu_req_scale": 0.07,
+            "med_zone_rgu_req_scale": 0.07,
+            "max_zone_rgu_req_scale": 0.07,
+            "rng_zone_rgu_req_scale": 0.0,
+            "min_zone_rgd_req_scale": 0.07,
+            "med_zone_rgd_req_scale": 0.07,
+            "max_zone_rgd_req_scale": 0.07,
+            "rng_zone_rgd_req_scale": 0.0,
+            "min_zone_scr_req_scale": 0.05,
+            "med_zone_scr_req_scale": 0.05,
+            "max_zone_scr_req_scale": 0.05,
+            "rng_zone_scr_req_scale": 0.0,
+            "min_zone_nsc_req_scale": 0.05,
+            "med_zone_nsc_req_scale": 0.05,
+            "max_zone_nsc_req_scale": 0.05,
+            "rng_zone_nsc_req_scale": 0.0,
+            "min_zone_min_time_rru_req": 0.01,
+            "med_zone_min_time_rru_req": 0.01,
+            "max_zone_min_time_rru_req": 0.01,
+            "rng_zone_min_time_rru_req": 0.0,
+            "min_zone_med_time_rru_req": 0.01,
+            "med_zone_med_time_rru_req": 0.01,
+            "max_zone_med_time_rru_req": 0.01,
+            "rng_zone_med_time_rru_req": 0.0,
+            "min_zone_max_time_rru_req": 0.01,
+            "med_zone_max_time_rru_req": 0.01,
+            "max_zone_max_time_rru_req": 0.01,
+            "rng_zone_max_time_rru_req": 0.0,
+            "min_zone_rng_time_rru_req": 0.0,
+            "med_zone_rng_time_rru_req": 0.0,
+            "max_zone_rng_time_rru_req": 0.0,
+            "rng_zone_rng_time_rru_req": 0.0,
+            "min_zone_min_time_rrd_req": 0.01,
+            "med_zone_min_time_rrd_req": 0.01,
+            "max_zone_min_time_rrd_req": 0.01,
+            "rng_zone_min_time_rrd_req": 0.0,
+            "min_zone_med_time_rrd_req": 0.01,
+            "med_zone_med_time_rrd_req": 0.01,
+            "max_zone_med_time_rrd_req": 0.01,
+            "rng_zone_med_time_rrd_req": 0.0,
+            "min_zone_max_time_rrd_req": 0.01,
+            "med_zone_max_time_rrd_req": 0.01,
+            "max_zone_max_time_rrd_req": 0.01,
+            "rng_zone_max_time_rrd_req": 0.0,
+            "min_zone_rng_time_rrd_req": 0.0,
+            "med_zone_rng_time_rrd_req": 0.0,
+            "max_zone_rng_time_rrd_req": 0.0,
+            "rng_zone_rng_time_rrd_req": 0.0,
+            "min_zone_min_time_qru_req": 0.01,
+            "med_zone_min_time_qru_req": 0.01,
+            "max_zone_min_time_qru_req": 0.01,
+            "rng_zone_min_time_qru_req": 0.0,
+            "min_zone_med_time_qru_req": 0.01,
+            "med_zone_med_time_qru_req": 0.01,
+            "max_zone_med_time_qru_req": 0.01,
+            "rng_zone_med_time_qru_req": 0.0,
+            "min_zone_max_time_qru_req": 0.01,
+            "med_zone_max_time_qru_req": 0.01,
+            "max_zone_max_time_qru_req": 0.01,
+            "rng_zone_max_time_qru_req": 0.0,
+            "min_zone_rng_time_qru_req": 0.0,
+            "med_zone_rng_time_qru_req": 0.0,
+            "max_zone_rng_time_qru_req": 0.0,
+            "rng_zone_rng_time_qru_req": 0.0,
+            "min_zone_min_time_qrd_req": 0.01,
+            "med_zone_min_time_qrd_req": 0.01,
+            "max_zone_min_time_qrd_req": 0.01,
+            "rng_zone_min_time_qrd_req": 0.0,
+            "min_zone_med_time_qrd_req": 0.01,
+            "med_zone_med_time_qrd_req": 0.01,
+            "max_zone_med_time_qrd_req": 0.01,
+            "rng_zone_med_time_qrd_req": 0.0,
+            "min_zone_max_time_qrd_req": 0.01,
+            "med_zone_max_time_qrd_req": 0.01,
+            "max_zone_max_time_qrd_req": 0.01,
+            "rng_zone_max_time_qrd_req": 0.0,
+            "min_zone_rng_time_qrd_req": 0.0,
+            "med_zone_rng_time_qrd_req": 0.0,
+            "max_zone_rng_time_qrd_req": 0.0,
+            "rng_zone_rng_time_qrd_req": 0.0
+        },
+        "t_supply_demand": [
+            {
+                "fixed_demand": 0.0,
+                "num_pr_block": 5,
+                "num_cs_block": 5,
+                "p_min_pr": 0.0,
+                "p_max_pr": 0.5,
+                "p_min_cs": 0.0,
+                "p_max_cs": 0.31183,
+                "lambda_min_pr": 0.0,
+                "lambda_max_pr": 4000.0,
+                "lambda_min_cs": 2500.0,
+                "lambda_max_cs": 100000.0,
+                "p_min": 0.31183,
+                "p_max": 0.31183,
+                "p_med": 0.31183,
+                "lambda_min": 20.0,
+                "lambda_max": 20.0,
+                "lambda_med": 20.0,
+                "surplus_total": 16368.3384,
+                "value_exchanged": 6.2366,
+                "surplus_pr": 2.5,
+                "surplus_cs": 16365.8384,
+                "cost_pr": 3.7366,
+                "value_cs": 16372.075
+            },
+            {
+                "fixed_demand": 0.0,
+                "num_pr_block": 5,
+                "num_cs_block": 6,
+                "p_min_pr": 0.0,
+                "p_max_pr": 0.5,
+                "p_min_cs": 0.0,
+                "p_max_cs": 0.30921,
+                "lambda_min_pr": 0.0,
+                "lambda_max_pr": 4000.0,
+                "lambda_min_cs": 1000.0,
+                "lambda_max_cs": 100000.0,
+                "p_min": 0.30921,
+                "p_max": 0.30921,
+                "p_med": 0.30921,
+                "lambda_min": 20.0,
+                "lambda_max": 20.0,
+                "lambda_med": 20.0,
+                "surplus_total": 16229.3258,
+                "value_exchanged": 6.1842,
+                "surplus_pr": 2.5,
+                "surplus_cs": 16226.8258,
+                "cost_pr": 3.6841999999999997,
+                "value_cs": 16233.01
+            },
+            {
+                "fixed_demand": 0.0,
+                "num_pr_block": 5,
+                "num_cs_block": 5,
+                "p_min_pr": 0.0,
+                "p_max_pr": 0.5,
+                "p_min_cs": 0.0,
+                "p_max_cs": 0.30658,
+                "lambda_min_pr": 0.0,
+                "lambda_max_pr": 4000.0,
+                "lambda_min_cs": 2500.0,
+                "lambda_max_cs": 100000.0,
+                "p_min": 0.30658,
+                "p_max": 0.30658,
+                "p_med": 0.30658,
+                "lambda_min": 20.0,
+                "lambda_max": 20.0,
+                "lambda_med": 20.0,
+                "surplus_total": 16092.8184,
+                "value_exchanged": 6.131600000000001,
+                "surplus_pr": 2.5,
+                "surplus_cs": 16090.3184,
+                "cost_pr": 3.6316000000000006,
+                "value_cs": 16096.45
+            },
+            {
+                "fixed_demand": 0.0,
+                "num_pr_block": 5,
+                "num_cs_block": 6,
+                "p_min_pr": 0.0,
+                "p_max_pr": 0.5,
+                "p_min_cs": 0.0,
+                "p_max_cs": 0.30396,
+                "lambda_min_pr": 0.0,
+                "lambda_max_pr": 4000.0,
+                "lambda_min_cs": 1000.0,
+                "lambda_max_cs": 100000.0,
+                "p_min": 0.30396,
+                "p_max": 0.30396,
+                "p_med": 0.30396,
+                "lambda_min": 20.0,
+                "lambda_max": 20.0,
+                "lambda_med": 20.0,
+                "surplus_total": 15953.8058,
+                "value_exchanged": 6.0792,
+                "surplus_pr": 2.5,
+                "surplus_cs": 15951.3058,
+                "cost_pr": 3.5792,
+                "value_cs": 15957.385
+            },
+            {
+                "fixed_demand": 0.0,
+                "num_pr_block": 5,
+                "num_cs_block": 5,
+                "p_min_pr": 0.0,
+                "p_max_pr": 0.5,
+                "p_min_cs": 0.0,
+                "p_max_cs": 0.30134,
+                "lambda_min_pr": 0.0,
+                "lambda_max_pr": 4000.0,
+                "lambda_min_cs": 2500.0,
+                "lambda_max_cs": 100000.0,
+                "p_min": 0.30134,
+                "p_max": 0.30134,
+                "p_med": 0.30134,
+                "lambda_min": 20.0,
+                "lambda_max": 20.0,
+                "lambda_med": 20.0,
+                "surplus_total": 15817.3232,
+                "value_exchanged": 6.0268,
+                "surplus_pr": 2.5,
+                "surplus_cs": 15814.8232,
+                "cost_pr": 3.5267999999999997,
+                "value_cs": 15820.85
+            },
+            {
+                "fixed_demand": 0.0,
+                "num_pr_block": 5,
+                "num_cs_block": 6,
+                "p_min_pr": 0.0,
+                "p_max_pr": 0.5,
+                "p_min_cs": 0.0,
+                "p_max_cs": 0.3004,
+                "lambda_min_pr": 0.0,
+                "lambda_max_pr": 4000.0,
+                "lambda_min_cs": 1000.0,
+                "lambda_max_cs": 100000.0,
+                "p_min": 0.3004,
+                "p_max": 0.3004,
+                "p_med": 0.3004,
+                "lambda_min": 20.0,
+                "lambda_max": 20.0,
+                "lambda_med": 20.0,
+                "surplus_total": 15767.492,
+                "value_exchanged": 6.008,
+                "surplus_pr": 2.5,
+                "surplus_cs": 15764.992,
+                "cost_pr": 3.508,
+                "value_cs": 15771.0
+            },
+            {
+                "fixed_demand": 0.0,
+                "num_pr_block": 5,
+                "num_cs_block": 6,
+                "p_min_pr": 0.0,
+                "p_max_pr": 0.5,
+                "p_min_cs": 0.0,
+                "p_max_cs": 0.29945,
+                "lambda_min_pr": 0.0,
+                "lambda_max_pr": 4000.0,
+                "lambda_min_cs": 1000.0,
+                "lambda_max_cs": 100000.0,
+                "p_min": 0.29945,
+                "p_max": 0.29945,
+                "p_med": 0.29945,
+                "lambda_min": 20.0,
+                "lambda_max": 20.0,
+                "lambda_med": 20.0,
+                "surplus_total": 15717.636,
+                "value_exchanged": 5.989,
+                "surplus_pr": 2.5,
+                "surplus_cs": 15715.136,
+                "cost_pr": 3.489,
+                "value_cs": 15721.125
+            },
+            {
+                "fixed_demand": 0.0,
+                "num_pr_block": 5,
+                "num_cs_block": 6,
+                "p_min_pr": 0.0,
+                "p_max_pr": 0.5,
+                "p_min_cs": 0.0,
+                "p_max_cs": 0.29851000000000005,
+                "lambda_min_pr": 0.0,
+                "lambda_max_pr": 4000.0,
+                "lambda_min_cs": 1000.0,
+                "lambda_max_cs": 100000.0,
+                "p_min": 0.29851000000000005,
+                "p_max": 0.29851000000000005,
+                "p_med": 0.29851000000000005,
+                "lambda_min": 20.0,
+                "lambda_max": 20.0,
+                "lambda_med": 20.0,
+                "surplus_total": 15667.7898,
+                "value_exchanged": 5.970200000000001,
+                "surplus_pr": 2.5,
+                "surplus_cs": 15665.2898,
+                "cost_pr": 3.470200000000001,
+                "value_cs": 15671.26
+            },
+            {
+                "fixed_demand": 0.0,
+                "num_pr_block": 5,
+                "num_cs_block": 6,
+                "p_min_pr": 0.0,
+                "p_max_pr": 0.5,
+                "p_min_cs": 0.0,
+                "p_max_cs": 0.29757,
+                "lambda_min_pr": 0.0,
+                "lambda_max_pr": 4000.0,
+                "lambda_min_cs": 1000.0,
+                "lambda_max_cs": 100000.0,
+                "p_min": 0.29757,
+                "p_max": 0.29757,
+                "p_med": 0.29757,
+                "lambda_min": 20.0,
+                "lambda_max": 20.0,
+                "lambda_med": 20.0,
+                "surplus_total": 15617.9436,
+                "value_exchanged": 5.9514,
+                "surplus_pr": 2.4999999999999996,
+                "surplus_cs": 15615.4436,
+                "cost_pr": 3.4514,
+                "value_cs": 15621.395
+            },
+            {
+                "fixed_demand": 0.0,
+                "num_pr_block": 5,
+                "num_cs_block": 6,
+                "p_min_pr": 0.0,
+                "p_max_pr": 0.5,
+                "p_min_cs": 0.0,
+                "p_max_cs": 0.29477,
+                "lambda_min_pr": 0.0,
+                "lambda_max_pr": 4000.0,
+                "lambda_min_cs": 1000.0,
+                "lambda_max_cs": 100000.0,
+                "p_min": 0.29477,
+                "p_max": 0.29477,
+                "p_med": 0.29477,
+                "lambda_min": 20.0,
+                "lambda_max": 20.0,
+                "lambda_med": 20.0,
+                "surplus_total": 15470.999600000001,
+                "value_exchanged": 5.8953999999999995,
+                "surplus_pr": 2.5,
+                "surplus_cs": 15468.499600000001,
+                "cost_pr": 3.3953999999999995,
+                "value_cs": 15474.395
+            },
+            {
+                "fixed_demand": 0.0,
+                "num_pr_block": 5,
+                "num_cs_block": 6,
+                "p_min_pr": 0.0,
+                "p_max_pr": 0.5,
+                "p_min_cs": 0.0,
+                "p_max_cs": 0.29197,
+                "lambda_min_pr": 0.0,
+                "lambda_max_pr": 4000.0,
+                "lambda_min_cs": 1000.0,
+                "lambda_max_cs": 100000.0,
+                "p_min": 0.29197,
+                "p_max": 0.29197,
+                "p_med": 0.29197,
+                "lambda_min": 20.0,
+                "lambda_max": 20.0,
+                "lambda_med": 20.0,
+                "surplus_total": 15324.0556,
+                "value_exchanged": 5.8394,
+                "surplus_pr": 2.5,
+                "surplus_cs": 15321.5556,
+                "cost_pr": 3.3394000000000004,
+                "value_cs": 15327.395
+            },
+            {
+                "fixed_demand": 0.0,
+                "num_pr_block": 5,
+                "num_cs_block": 6,
+                "p_min_pr": 0.0,
+                "p_max_pr": 0.518,
+                "p_min_cs": 0.0,
+                "p_max_cs": 0.2975,
+                "lambda_min_pr": 0.0,
+                "lambda_max_pr": 4000.0,
+                "lambda_min_cs": 1000.0,
+                "lambda_max_cs": 100000.0,
+                "p_min": 0.2975,
+                "p_max": 0.2975,
+                "p_med": 0.2975,
+                "lambda_min": 20.0,
+                "lambda_max": 20.0,
+                "lambda_med": 20.0,
+                "surplus_total": 15615.66,
+                "value_exchanged": 5.949999999999999,
+                "surplus_pr": 2.86,
+                "surplus_cs": 15612.8,
+                "cost_pr": 3.0899999999999994,
+                "value_cs": 15618.75
+            },
+            {
+                "fixed_demand": 0.0,
+                "num_pr_block": 5,
+                "num_cs_block": 5,
+                "p_min_pr": 0.0,
+                "p_max_pr": 0.536,
+                "p_min_cs": 0.0,
+                "p_max_cs": 0.30303,
+                "lambda_min_pr": 0.0,
+                "lambda_max_pr": 4000.0,
+                "lambda_min_cs": 2500.0,
+                "lambda_max_cs": 100000.0,
+                "p_min": 0.30303,
+                "p_max": 0.30303,
+                "p_med": 0.30303,
+                "lambda_min": 20.0,
+                "lambda_max": 20.0,
+                "lambda_med": 20.0,
+                "surplus_total": 15907.234400000001,
+                "value_exchanged": 6.060600000000001,
+                "surplus_pr": 3.2199999999999998,
+                "surplus_cs": 15904.0144,
+                "cost_pr": 2.840600000000001,
+                "value_cs": 15910.075
+            },
+            {
+                "fixed_demand": 0.0,
+                "num_pr_block": 5,
+                "num_cs_block": 5,
+                "p_min_pr": 0.0,
+                "p_max_pr": 0.534,
+                "p_min_cs": 0.0,
+                "p_max_cs": 0.31639,
+                "lambda_min_pr": 0.0,
+                "lambda_max_pr": 4000.0,
+                "lambda_min_cs": 2500.0,
+                "lambda_max_cs": 100000.0,
+                "p_min": 0.31639,
+                "p_max": 0.31639,
+                "p_med": 0.31639,
+                "lambda_min": 20.0,
+                "lambda_max": 20.0,
+                "lambda_med": 20.0,
+                "surplus_total": 16607.8272,
+                "value_exchanged": 6.3278,
+                "surplus_pr": 3.1800000000000006,
+                "surplus_cs": 16604.6472,
+                "cost_pr": 3.1477999999999993,
+                "value_cs": 16610.975
+            },
+            {
+                "fixed_demand": 0.0,
+                "num_pr_block": 5,
+                "num_cs_block": 6,
+                "p_min_pr": 0.0,
+                "p_max_pr": 0.532,
+                "p_min_cs": 0.0,
+                "p_max_cs": 0.32975,
+                "lambda_min_pr": 0.0,
+                "lambda_max_pr": 4000.0,
+                "lambda_min_cs": 1000.0,
+                "lambda_max_cs": 100000.0,
+                "p_min": 0.32975,
+                "p_max": 0.32975,
+                "p_med": 0.32975,
+                "lambda_min": 20.0,
+                "lambda_max": 20.0,
+                "lambda_med": 20.0,
+                "surplus_total": 17308.419999999995,
+                "value_exchanged": 6.595,
+                "surplus_pr": 3.1400000000000006,
+                "surplus_cs": 17305.279999999995,
+                "cost_pr": 3.454999999999999,
+                "value_cs": 17311.874999999996
+            },
+            {
+                "fixed_demand": 0.0,
+                "num_pr_block": 5,
+                "num_cs_block": 5,
+                "p_min_pr": 0.0,
+                "p_max_pr": 0.516,
+                "p_min_cs": 0.0,
+                "p_max_cs": 0.345,
+                "lambda_min_pr": 0.0,
+                "lambda_max_pr": 4000.0,
+                "lambda_min_cs": 2500.0,
+                "lambda_max_cs": 100000.0,
+                "p_min": 0.345,
+                "p_max": 0.345,
+                "p_med": 0.345,
+                "lambda_min": 20.0,
+                "lambda_max": 20.0,
+                "lambda_med": 20.0,
+                "surplus_total": 18108.420000000002,
+                "value_exchanged": 6.8999999999999995,
+                "surplus_pr": 2.8200000000000003,
+                "surplus_cs": 18105.600000000002,
+                "cost_pr": 4.079999999999999,
+                "value_cs": 18112.500000000004
+            },
+            {
+                "fixed_demand": 0.0,
+                "num_pr_block": 5,
+                "num_cs_block": 6,
+                "p_min_pr": 0.0,
+                "p_max_pr": 0.5,
+                "p_min_cs": 0.0,
+                "p_max_cs": 0.36025,
+                "lambda_min_pr": 0.0,
+                "lambda_max_pr": 4000.0,
+                "lambda_min_cs": 1000.0,
+                "lambda_max_cs": 100000.0,
+                "p_min": 0.36025,
+                "p_max": 0.36025,
+                "p_med": 0.36025,
+                "lambda_min": 20.0,
+                "lambda_max": 20.0,
+                "lambda_med": 20.0,
+                "surplus_total": 18908.42,
+                "value_exchanged": 7.205,
+                "surplus_pr": 2.5,
+                "surplus_cs": 18905.92,
+                "cost_pr": 4.705,
+                "value_cs": 18913.125
+            },
+            {
+                "fixed_demand": 0.0,
+                "num_pr_block": 5,
+                "num_cs_block": 6,
+                "p_min_pr": 0.0,
+                "p_max_pr": 0.5,
+                "p_min_cs": 0.0,
+                "p_max_cs": 0.39,
+                "lambda_min_pr": 0.0,
+                "lambda_max_pr": 4000.0,
+                "lambda_min_cs": 1000.0,
+                "lambda_max_cs": 100000.0,
+                "p_min": 0.39,
+                "p_max": 0.39,
+                "p_med": 0.39,
+                "lambda_min": 20.0,
+                "lambda_max": 20.0,
+                "lambda_med": 20.0,
+                "surplus_total": 20469.7,
+                "value_exchanged": 7.800000000000001,
+                "surplus_pr": 2.5,
+                "surplus_cs": 20467.2,
+                "cost_pr": 5.300000000000001,
+                "value_cs": 20475.0
+            }
+        ],
+        "value_exchanged": 51.9212,
+        "surplus_total": 136262.03255,
+        "surplus_pr": 21.36,
+        "surplus_cs": 136240.67255000002,
+        "cost_pr": 30.561200000000003,
+        "value_cs": 136292.59375,
+        "error_diagnostics": "",
+        "pass": 1
+    },
+    "solution": {
+        "error_diagnostics": "",
+        "pass": 1
+    },
+    "evaluation": {
+        "viol_sd_t_u_on_max": {
+            "val": 0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_sd_t_u_on_min": {
+            "val": 0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "sum_sd_some_su_after_t_start": 0,
+        "sum_sd_some_sd_after_t_start": 0,
+        "sum_sd_t_su": 0,
+        "sum_sd_t_su_t_start": 0,
+        "sum_sd_t_sd": 0,
+        "sum_sd_t_sd_t_start": 0,
+        "viol_sd_t_d_up_min": {
+            "val": 0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_sd_t_d_dn_min": {
+            "val": 0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_sd_max_startup_constr": {
+            "val": 0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "sum_sd_t_z_on": 0.0,
+        "sum_sd_t_z_su": 0.0,
+        "sum_sd_t_z_sd": 0.0,
+        "sum_sd_t_z_sus": 0.0,
+        "viol_bus_t_v_max": {
+            "val": 0.0,
+            "idx": {
+                "0": "bus_0",
+                "1": 0
+            }
+        },
+        "viol_bus_t_v_min": {
+            "val": 0.0,
+            "idx": {
+                "0": "bus_0",
+                "1": 0
+            }
+        },
+        "viol_sh_t_u_st_max": {
+            "val": 0,
+            "idx": {
+                "0": "sh_0",
+                "1": 0
+            }
+        },
+        "viol_sh_t_u_st_min": {
+            "val": 0,
+            "idx": {
+                "0": "sh_0",
+                "1": 0
+            }
+        },
+        "viol_dcl_t_p_max": {
+            "val": null,
+            "idx": {
+                "0": null,
+                "1": null
+            }
+        },
+        "viol_dcl_t_p_min": {
+            "val": null,
+            "idx": {
+                "0": null,
+                "1": null
+            }
+        },
+        "viol_dcl_t_q_fr_max": {
+            "val": null,
+            "idx": {
+                "0": null,
+                "1": null
+            }
+        },
+        "viol_dcl_t_q_fr_min": {
+            "val": null,
+            "idx": {
+                "0": null,
+                "1": null
+            }
+        },
+        "viol_dcl_t_q_to_max": {
+            "val": null,
+            "idx": {
+                "0": null,
+                "1": null
+            }
+        },
+        "viol_dcl_t_q_to_min": {
+            "val": null,
+            "idx": {
+                "0": null,
+                "1": null
+            }
+        },
+        "viol_xfr_t_tau_max": {
+            "val": 0.0,
+            "idx": {
+                "0": "xfr_0",
+                "1": 0
+            }
+        },
+        "viol_xfr_t_tau_min": {
+            "val": 0.0,
+            "idx": {
+                "0": "xfr_0",
+                "1": 0
+            }
+        },
+        "viol_xfr_t_phi_max": {
+            "val": 0.0,
+            "idx": {
+                "0": "xfr_0",
+                "1": 0
+            }
+        },
+        "viol_xfr_t_phi_min": {
+            "val": 0.0,
+            "idx": {
+                "0": "xfr_0",
+                "1": 0
+            }
+        },
+        "viol_acl_t_u_su_max": {
+            "val": 0,
+            "idx": {
+                "0": "acl_0",
+                "1": 0
+            }
+        },
+        "viol_acl_t_u_sd_max": {
+            "val": 0,
+            "idx": {
+                "0": "acl_0",
+                "1": 0
+            }
+        },
+        "viol_xfr_t_u_su_max": {
+            "val": 0,
+            "idx": {
+                "0": "xfr_0",
+                "1": 0
+            }
+        },
+        "viol_xfr_t_u_sd_max": {
+            "val": 0,
+            "idx": {
+                "0": "xfr_0",
+                "1": 0
+            }
+        },
+        "sum_acl_some_su_after_t_start": 0,
+        "sum_acl_some_sd_after_t_start": 0,
+        "sum_acl_t_u_su": 0,
+        "sum_acl_t_u_su_t_start": 0,
+        "sum_acl_t_u_sd": 0,
+        "sum_acl_t_u_sd_t_start": 0,
+        "sum_xfr_some_su_after_t_start": 0,
+        "sum_xfr_some_sd_after_t_start": 0,
+        "sum_xfr_t_u_su": 0,
+        "sum_xfr_t_u_su_t_start": 0,
+        "sum_xfr_t_u_sd": 0,
+        "sum_xfr_t_u_sd_t_start": 0,
+        "sum_acl_t_z_su": 0.0,
+        "sum_acl_t_z_sd": 0.0,
+        "sum_xfr_t_z_su": 0.0,
+        "sum_xfr_t_z_sd": 0.0,
+        "sum_acl_t_z_s": 0.0,
+        "viol_acl_t_s_max": {
+            "val": 0.0,
+            "idx": {
+                "0": "acl_0",
+                "1": 0
+            }
+        },
+        "sum_xfr_t_z_s": 0.0,
+        "viol_xfr_t_s_max": {
+            "val": 0.0,
+            "idx": {
+                "0": "xfr_0",
+                "1": 0
+            }
+        },
+        "viol_bus_t_p_balance_max": {
+            "val": 0.0007073311335334953,
+            "idx": {
+                "0": "bus_2",
+                "1": 16
+            }
+        },
+        "viol_bus_t_p_balance_min": {
+            "val": -0.0008754039645180733,
+            "idx": {
+                "0": "bus_1",
+                "1": 7
+            }
+        },
+        "sum_bus_t_z_p": 1031.3933625440795,
+        "viol_bus_t_q_balance_max": {
+            "val": 0.19330676038925135,
+            "idx": {
+                "0": "bus_1",
+                "1": 7
+            }
+        },
+        "viol_bus_t_q_balance_min": {
+            "val": -0.2141543192480058,
+            "idx": {
+                "0": "bus_0",
+                "1": 17
+            }
+        },
+        "sum_bus_t_z_q": 351424.51201298676,
+        "sum_pr_t_z_p": 31.4087,
+        "sum_cs_t_z_p": 136292.59375,
+        "sum_sd_t_z_rgu": 0.0,
+        "sum_sd_t_z_rgd": 0.0,
+        "sum_sd_t_z_scr": 0.0,
+        "sum_sd_t_z_nsc": 0.0,
+        "sum_sd_t_z_rru_on": 0.0,
+        "sum_sd_t_z_rrd_on": 0.0,
+        "sum_sd_t_z_rru_off": 0.0,
+        "sum_sd_t_z_rrd_off": 0.0,
+        "sum_sd_t_z_qru": 0.0,
+        "sum_sd_t_z_qrd": 0.0,
+        "viol_prz_t_p_rgu_balance": {
+            "val": 0.010630000000000004,
+            "idx": {
+                "0": "prz_0",
+                "1": 17
+            }
+        },
+        "viol_prz_t_p_rgd_balance": {
+            "val": 0.010630000000000004,
+            "idx": {
+                "0": "prz_0",
+                "1": 17
+            }
+        },
+        "viol_prz_t_p_scr_balance": {
+            "val": 0.005130000000000006,
+            "idx": {
+                "0": "prz_0",
+                "1": 17
+            }
+        },
+        "viol_prz_t_p_nsc_balance": {
+            "val": 0.02463000000000001,
+            "idx": {
+                "0": "prz_0",
+                "1": 17
+            }
+        },
+        "viol_prz_t_p_rru_balance": {
+            "val": 0.01,
+            "idx": {
+                "0": "prz_0",
+                "1": 0
+            }
+        },
+        "viol_prz_t_p_rrd_balance": {
+            "val": 0.0,
+            "idx": {
+                "0": "prz_0",
+                "1": 0
+            }
+        },
+        "viol_qrz_t_q_qru_balance": {
+            "val": 0.0,
+            "idx": {
+                "0": "qrz_0",
+                "1": 0
+            }
+        },
+        "viol_qrz_t_q_qrd_balance": {
+            "val": 0.0,
+            "idx": {
+                "0": "qrz_0",
+                "1": 0
+            }
+        },
+        "sum_prz_t_z_rgu": 3.4330750000000014,
+        "sum_prz_t_z_rgd": 3.4330750000000014,
+        "sum_prz_t_z_scr": 0.6690000000000008,
+        "sum_prz_t_z_nsc": 8.355455000000003,
+        "sum_prz_t_z_rru": 5.9485,
+        "sum_prz_t_z_rrd": 0.0,
+        "sum_qrz_t_z_qru": 0.0,
+        "sum_qrz_t_z_qrd": 0.0,
+        "viol_t_connected_base": {
+            "val": 0,
+            "idx": {
+                "0": 0
+            }
+        },
+        "viol_t_connected_ctg": {
+            "val": 0,
+            "idx": {
+                "0": 0
+            }
+        },
+        "info_i_i_t_disconnected_base": {
+            "val": 0,
+            "idx": {
+                "0": null,
+                "1": null,
+                "2": null
+            }
+        },
+        "info_i_i_k_t_disconnected_ctg": {
+            "val": 0,
+            "idx": {
+                "0": null,
+                "1": null,
+                "2": null,
+                "3": null
+            }
+        },
+        "viol_pr_t_p_on_max": {
+            "val": 3.469446951953614e-18,
+            "idx": {
+                "0": "sd_1",
+                "1": 12
+            }
+        },
+        "viol_cs_t_p_on_max": {
+            "val": 0.0,
+            "idx": {
+                "0": "sd_2",
+                "1": 0
+            }
+        },
+        "viol_pr_t_p_off_max": {
+            "val": 0.0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_cs_t_p_off_max": {
+            "val": 0.0,
+            "idx": {
+                "0": "sd_2",
+                "1": 0
+            }
+        },
+        "viol_pr_t_p_on_min": {
+            "val": 0.0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_cs_t_p_on_min": {
+            "val": 0.0,
+            "idx": {
+                "0": "sd_2",
+                "1": 0
+            }
+        },
+        "viol_pr_t_p_off_min": {
+            "val": 0.0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_cs_t_p_off_min": {
+            "val": 0.0,
+            "idx": {
+                "0": "sd_2",
+                "1": 0
+            }
+        },
+        "viol_pr_t_q_max": {
+            "val": 5.551115123125783e-17,
+            "idx": {
+                "0": "sd_1",
+                "1": 16
+            }
+        },
+        "viol_pr_t_q_min": {
+            "val": 0.0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_cs_t_q_max": {
+            "val": 1.0000000000010001e-05,
+            "idx": {
+                "0": "sd_2",
+                "1": 0
+            }
+        },
+        "viol_cs_t_q_min": {
+            "val": 0.0,
+            "idx": {
+                "0": "sd_2",
+                "1": 0
+            }
+        },
+        "viol_pr_t_q_p_max": {
+            "val": null,
+            "idx": {
+                "0": null,
+                "1": null
+            }
+        },
+        "viol_pr_t_q_p_min": {
+            "val": null,
+            "idx": {
+                "0": null,
+                "1": null
+            }
+        },
+        "viol_cs_t_q_p_max": {
+            "val": null,
+            "idx": {
+                "0": null,
+                "1": null
+            }
+        },
+        "viol_cs_t_q_p_min": {
+            "val": null,
+            "idx": {
+                "0": null,
+                "1": null
+            }
+        },
+        "viol_sd_t_p_ramp_dn_max": {
+            "val": 0.0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_sd_t_p_ramp_up_max": {
+            "val": 0.0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_sd_max_energy_constr": {
+            "val": 0.0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_sd_min_energy_constr": {
+            "val": 0.0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_sd_t_p_rgu_nonneg": {
+            "val": -0.0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_sd_t_p_rgd_nonneg": {
+            "val": -0.0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_sd_t_p_scr_nonneg": {
+            "val": -0.0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_sd_t_p_nsc_nonneg": {
+            "val": -0.0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_sd_t_p_rru_on_nonneg": {
+            "val": -0.0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_sd_t_p_rru_off_nonneg": {
+            "val": -0.0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_sd_t_p_rrd_on_nonneg": {
+            "val": -0.0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_sd_t_p_rrd_off_nonneg": {
+            "val": -0.0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_sd_t_q_qru_nonneg": {
+            "val": -0.0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_sd_t_q_qrd_nonneg": {
+            "val": -0.0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_sd_t_p_rgu_max": {
+            "val": 0.0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_sd_t_p_rgd_max": {
+            "val": 0.0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_sd_t_p_scr_max": {
+            "val": 0.0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_sd_t_p_nsc_max": {
+            "val": 0.0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_sd_t_p_rru_on_max": {
+            "val": 3.469446951953614e-18,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_sd_t_p_rrd_on_max": {
+            "val": 0.0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_sd_t_p_rru_off_max": {
+            "val": 0.0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_sd_t_p_rrd_off_max": {
+            "val": 0.0,
+            "idx": {
+                "0": "sd_0",
+                "1": 0
+            }
+        },
+        "viol_acl_acl_t_s_max_ctg": {
+            "val": 0.0,
+            "idx": {
+                "0": null,
+                "1": null,
+                "2": null
+            }
+        },
+        "viol_xfr_acl_t_s_max_ctg": {
+            "val": 0.0,
+            "idx": {
+                "0": null,
+                "1": null,
+                "2": null
+            }
+        },
+        "viol_acl_dcl_t_s_max_ctg": {
+            "val": 0.0,
+            "idx": {
+                "0": null,
+                "1": null,
+                "2": null
+            }
+        },
+        "viol_xfr_dcl_t_s_max_ctg": {
+            "val": 0.0,
+            "idx": {
+                "0": null,
+                "1": null,
+                "2": null
+            }
+        },
+        "viol_acl_xfr_t_s_max_ctg": {
+            "val": 0.0,
+            "idx": {
+                "0": null,
+                "1": null,
+                "2": null
+            }
+        },
+        "viol_xfr_xfr_t_s_max_ctg": {
+            "val": 0.0,
+            "idx": {
+                "0": null,
+                "1": null,
+                "2": null
+            }
+        },
+        "z": -216216.55943053085,
+        "z_max_energy": 0.0,
+        "z_min_energy": 0.0,
+        "z_base": -216216.55943053085,
+        "z_value": 136292.59375,
+        "total_switches": 0,
+        "total_switches_su_t_start": 0,
+        "total_switches_sd_t_start": 0,
+        "total_switches_su_after_t_start": 0,
+        "total_switches_sd_after_t_start": 0,
+        "z_cost": 31.4087,
+        "z_penalty": 352477.74448053085,
+        "z_k_worst_case": 0.0,
+        "z_k_average_case": 0.0,
+        "phys_feas": 0,
+        "feas": 0,
+        "infeas": 1,
+        "time_run": 0.06128072738647461,
+        "time_connectedness": 0.00594782829284668,
+        "time_post_contingency": 0.04609107971191406,
+        "pass": 1,
+        "error_diagnostics": "",
+        "infeas_diagnostics": {
+            "viol_cs_t_q_max": {
+                "val": 1.0000000000010001e-05,
+                "idx": {
+                    "0": "sd_2",
+                    "1": 0
+                }
+            }
+        }
+    }
+}

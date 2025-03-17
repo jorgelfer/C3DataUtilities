@@ -225,7 +225,7 @@ def eval_post_contingency_model(sol_eval):
     acl_phi = numpy.zeros(shape=(num_acl, ), dtype=float)
     m_acl_k = nonref_bus_acl_inc[:, acl_delta_k].toarray()
     m_xfr_k = nonref_bus_xfr_inc[:, xfr_delta_k].toarray()
-    m_br_t = nonref_bus_br_inc[:, br_delta_t].toarray()
+    m_br_t = nonref_bus_br_inc.tocsr()[:, br_delta_t].toarray()
     # m_acl_t = nonref_bus_acl_inc[:, acl_delta_t].toarray()
     # m_xfr_t = nonref_bus_xfr_inc[:, xfr_delta_t].toarray()
     #mw_k = numpy.zeros(shape=(num_bus - 1, num_br_delta_k), dtype=float)

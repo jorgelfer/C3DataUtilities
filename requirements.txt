@@ -1,0 +1,9 @@
+
+scipy==1.5.4
+pydantic==1.*
+
+numpy
+pandas
+networkx
+psutil
+GO-3-data-model
