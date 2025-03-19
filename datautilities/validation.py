@@ -45,6 +45,11 @@ def read_config(default_config_file_name, config_file_name=None, parameters_str=
         override_config = read_json(config_file_name)
         config.update(override_config)
     if parameters_str is not None:
+        # print('parameters_str: {}'.format(parameters_str))
+
+        # change single quotes to double quotes
+        parameters_str = parameters_str.replace("'", '"')
+
         override_config = json.loads(parameters_str)
         config.update(override_config)
     return config

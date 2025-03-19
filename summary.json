@@ -4,26 +4,26 @@
     "git_info": {
         "C3DataUtilities": {
             "branch": "main",
-            "commit": "bb5df337553b21ab8be89ae5f9106958541730d4",
-            "date": "Wed Sep 6 11:03:53 2023 -0700",
+            "commit": "7dc86152e707ce0a5b5d4257e42139f1883f35d2",
+            "date": "Mon Mar 17 19:02:05 2025 -0400",
             "query_return_code": 0,
             "query_err": "",
             "branch_return_code": 0,
             "branch_err": "",
-            "query_path": "C:\\Users\\jfernandez87\\GitHub\\UC_scheduling\\C3DataUtilities\\datautilities",
-            "query_out": "commit bb5df337553b21ab8be89ae5f9106958541730d4\nAuthor: Jesse T Holzer <jesse.holzer@pnnl.gov>\nDate:   Wed Sep 6 11:03:53 2023 -0700\n\n    switches after start\n",
+            "query_path": "C:\\Users\\jfernandez87\\GitHub\\C3DataUtilities\\datautilities",
+            "query_out": "commit 7dc86152e707ce0a5b5d4257e42139f1883f35d2\nAuthor: jorgelfer <jorgeferram17@gmail.com>\nDate:   Mon Mar 17 19:02:05 2025 -0400\n\n    changes\n",
             "branch_out": "* main\n"
         },
         "Bid-DS-data-model": {
             "branch": "main",
-            "commit": "bb5df337553b21ab8be89ae5f9106958541730d4",
-            "date": "Wed Sep 6 11:03:53 2023 -0700",
+            "commit": "7dc86152e707ce0a5b5d4257e42139f1883f35d2",
+            "date": "Mon Mar 17 19:02:05 2025 -0400",
             "query_return_code": 0,
             "query_err": "",
             "branch_return_code": 0,
             "branch_err": "",
-            "query_path": "C:\\Users\\jfernandez87\\GitHub\\UC_scheduling\\C3DataUtilities\\.venv\\Lib\\site-packages\\datamodel",
-            "query_out": "commit bb5df337553b21ab8be89ae5f9106958541730d4\nAuthor: Jesse T Holzer <jesse.holzer@pnnl.gov>\nDate:   Wed Sep 6 11:03:53 2023 -0700\n\n    switches after start\n",
+            "query_path": "C:\\Users\\jfernandez87\\GitHub\\C3DataUtilities\\.venv\\Lib\\site-packages\\datamodel",
+            "query_out": "commit 7dc86152e707ce0a5b5d4257e42139f1883f35d2\nAuthor: jorgelfer <jorgeferram17@gmail.com>\nDate:   Mon Mar 17 19:02:05 2025 -0400\n\n    changes\n",
             "branch_out": "* main\n"
         }
     },
@@ -879,29 +879,29 @@
             }
         },
         "viol_bus_t_p_balance_min": {
-            "val": -0.0008754039645180733,
+            "val": -0.0010054039645180923,
             "idx": {
                 "0": "bus_1",
                 "1": 7
             }
         },
-        "sum_bus_t_z_p": 1031.3933625440795,
+        "sum_bus_t_z_p": 1164.893362544081,
         "viol_bus_t_q_balance_max": {
-            "val": 0.19330676038925135,
+            "val": 0.0298020539981233,
             "idx": {
-                "0": "bus_1",
-                "1": 7
+                "0": "bus_2",
+                "1": 11
             }
         },
         "viol_bus_t_q_balance_min": {
-            "val": -0.2141543192480058,
+            "val": -0.030042653182305718,
             "idx": {
-                "0": "bus_0",
-                "1": 17
+                "0": "bus_1",
+                "1": 12
             }
         },
-        "sum_bus_t_z_q": 351424.51201298676,
-        "sum_pr_t_z_p": 31.4087,
+        "sum_bus_t_z_q": 47691.274022660866,
+        "sum_pr_t_z_p": 31.434800000000003,
         "sum_cs_t_z_p": 136292.59375,
         "sum_sd_t_z_rgu": 0.0,
         "sum_sd_t_z_rgd": 0.0,
@@ -928,14 +928,14 @@
             }
         },
         "viol_prz_t_p_scr_balance": {
-            "val": 0.005130000000000006,
+            "val": 0.005141500000000004,
             "idx": {
                 "0": "prz_0",
                 "1": 17
             }
         },
         "viol_prz_t_p_nsc_balance": {
-            "val": 0.02463000000000001,
+            "val": 0.024653000000000005,
             "idx": {
                 "0": "prz_0",
                 "1": 17
@@ -945,7 +945,7 @@
             "val": 0.01,
             "idx": {
                 "0": "prz_0",
-                "1": 0
+                "1": 16
             }
         },
         "viol_prz_t_p_rrd_balance": {
@@ -971,9 +971,9 @@
         },
         "sum_prz_t_z_rgu": 3.4330750000000014,
         "sum_prz_t_z_rgd": 3.4330750000000014,
-        "sum_prz_t_z_scr": 0.6690000000000008,
-        "sum_prz_t_z_nsc": 8.355455000000003,
-        "sum_prz_t_z_rru": 5.9485,
+        "sum_prz_t_z_scr": 0.6711000000000005,
+        "sum_prz_t_z_nsc": 9.407375000000002,
+        "sum_prz_t_z_rru": 4.907,
         "sum_prz_t_z_rrd": 0.0,
         "sum_qrz_t_z_qru": 0.0,
         "sum_qrz_t_z_qrd": 0.0,
@@ -1007,7 +1007,7 @@
             }
         },
         "viol_pr_t_p_on_max": {
-            "val": 3.469446951953614e-18,
+            "val": 1.000000000000393e-05,
             "idx": {
                 "0": "sd_1",
                 "1": 12
@@ -1063,10 +1063,10 @@
             }
         },
         "viol_pr_t_q_max": {
-            "val": 5.551115123125783e-17,
+            "val": 0.0,
             "idx": {
-                "0": "sd_1",
-                "1": 16
+                "0": "sd_0",
+                "1": 0
             }
         },
         "viol_pr_t_q_min": {
@@ -1077,7 +1077,7 @@
             }
         },
         "viol_cs_t_q_max": {
-            "val": 1.0000000000010001e-05,
+            "val": 0.0,
             "idx": {
                 "0": "sd_2",
                 "1": 0
@@ -1168,7 +1168,7 @@
             }
         },
         "viol_sd_t_p_nsc_nonneg": {
-            "val": -0.0,
+            "val": 0.0,
             "idx": {
                 "0": "sd_0",
                 "1": 0
@@ -1182,7 +1182,7 @@
             }
         },
         "viol_sd_t_p_rru_off_nonneg": {
-            "val": -0.0,
+            "val": 0.0,
             "idx": {
                 "0": "sd_0",
                 "1": 0
@@ -1196,7 +1196,7 @@
             }
         },
         "viol_sd_t_p_rrd_off_nonneg": {
-            "val": -0.0,
+            "val": 0.0,
             "idx": {
                 "0": "sd_0",
                 "1": 0
@@ -1238,7 +1238,7 @@
             }
         },
         "viol_sd_t_p_nsc_max": {
-            "val": 0.0,
+            "val": -0.0,
             "idx": {
                 "0": "sd_0",
                 "1": 0
@@ -1259,14 +1259,14 @@
             }
         },
         "viol_sd_t_p_rru_off_max": {
-            "val": 0.0,
+            "val": -0.0,
             "idx": {
                 "0": "sd_0",
                 "1": 0
             }
         },
         "viol_sd_t_p_rrd_off_max": {
-            "val": 0.0,
+            "val": -0.0,
             "idx": {
                 "0": "sd_0",
                 "1": 0
@@ -1320,34 +1320,34 @@
                 "2": null
             }
         },
-        "z": -216216.55943053085,
+        "z": 87383.13993979506,
         "z_max_energy": 0.0,
         "z_min_energy": 0.0,
-        "z_base": -216216.55943053085,
+        "z_base": 87383.13993979506,
         "z_value": 136292.59375,
         "total_switches": 0,
         "total_switches_su_t_start": 0,
         "total_switches_sd_t_start": 0,
         "total_switches_su_after_t_start": 0,
         "total_switches_sd_after_t_start": 0,
-        "z_cost": 31.4087,
-        "z_penalty": 352477.74448053085,
+        "z_cost": 31.434800000000003,
+        "z_penalty": 48878.019010204946,
         "z_k_worst_case": 0.0,
         "z_k_average_case": 0.0,
         "phys_feas": 0,
         "feas": 0,
         "infeas": 1,
-        "time_run": 0.06128072738647461,
-        "time_connectedness": 0.00594782829284668,
-        "time_post_contingency": 0.04609107971191406,
+        "time_run": 0.047040462493896484,
+        "time_connectedness": 0.0037374496459960938,
+        "time_post_contingency": 0.0382688045501709,
         "pass": 1,
         "error_diagnostics": "",
         "infeas_diagnostics": {
-            "viol_cs_t_q_max": {
-                "val": 1.0000000000010001e-05,
+            "viol_pr_t_p_on_max": {
+                "val": 1.000000000000393e-05,
                 "idx": {
-                    "0": "sd_2",
-                    "1": 0
+                    "0": "sd_1",
+                    "1": 12
                 }
             }
         }
